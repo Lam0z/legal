@@ -1,0 +1,54 @@
+.header {
+
+    @media (max-width: 1199px) {
+
+        &__box {
+            min-height: 65px;
+    
+            .page-scrolled & {
+                min-height: 45px;
+            }
+        }
+    }
+
+    @media (max-width: 991px) {
+        
+    }
+
+    @media (max-width: 767px) {
+
+        &__menu {
+            display: none;
+            position: fixed;
+            z-index: 10;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #fff;
+            padding: 76px 15px 30px;
+            text-align: center;
+
+            &-item {
+                margin: 0 0 40px 0;
+            }
+        }
+
+        &__icon {
+            display: block;
+            margin-left: 20px;
+        }
+
+        &__buttonbox {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+    }
+
+    @media (max-width: 575px) {
+        
+    }
+}
+   

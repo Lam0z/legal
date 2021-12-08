@@ -1,0 +1,107 @@
+.header {
+    position: fixed;
+    width: 100%;
+    max-width: 1920px;
+    left: auto;
+    right: auto;
+    top: 0;
+    z-index: 20;
+
+    .page-scrolled & {
+        background: rgba(211, 211, 211, 0.801);
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 85px;
+        transition: 0.3s;
+
+        .page-scrolled & {
+            min-height: 45px;
+        }
+    }
+
+    &__logo {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: center;
+
+        &-item {
+            margin-right: 48px;
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        align-items: center;
+    }
+
+    &__icon {
+        display: none;
+        
+
+        &-menu {
+            position: relative;
+            z-index: 11;
+            display: block;
+            width: 35px;
+            height: 26px;
+            background:   url(../img/header/icons.png) no-repeat 0 0px;
+            cursor: pointer;
+            
+            
+            &::before{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                // background: red;
+                border-top: 3px solid grey;
+                border-bottom: 3px solid grey;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                transition: all 1s;
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 3px;
+                background: grey;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                transition: all 1s;
+            }
+        }
+
+        &-menu.open {
+            &::before{
+                border: none;
+                height: 3px;
+                background: grey;
+                transform: translateX(-50%) rotate(-45deg);
+            }
+            &::after{
+                transform: translateX(-50%) rotate(225deg) ;
+            }
+        }
+    }
+
+    &__button {
+    }
+}
+
+
