@@ -1,0 +1,62 @@
+.main {
+    padding: 150px 0 20px 0;
+    .container{
+        position: relative;
+    }
+
+    &__content {
+        max-width: 60%;
+    }
+
+    &__date {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 27px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        color: white;
+    }
+
+    &__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 66px;
+        line-height: 110%;
+        color: #FFB000;
+        margin-bottom: 35px;
+    }
+
+    &__subtitle {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        text-transform: uppercase;
+        padding-left: 14px;
+        color: #FFFFFF;
+        border-left: 2px solid white;
+        margin-bottom: 30px;
+    }
+
+    &__speaker-info {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 120%;
+        color: white;
+        span{
+            color: #FFB000;
+        }
+
+    }
+
+    &__image {
+        max-width: 80%;
+        position: absolute;
+        top: -10%;
+        right: -30%;
+        // z-index: -1;
+    }
+
+}
